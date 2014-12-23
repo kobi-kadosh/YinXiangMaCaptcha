@@ -75,7 +75,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-    <None Include="README.md" />
     <None Include="YinXiangMa.Captcha.nuspec" />
     <None Include="YinXiangMaCaptcha.cshtml">
       <Generator>RazorGenerator</Generator>
@@ -95,8 +94,8 @@
     <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
   </Target>
   <PropertyGroup>
-    <PostBuildEvent>cd "$(SolutionDir)"
-.nuget\nuget pack -Symbols  "$(ProjectPath)"</PostBuildEvent>
+    <PostBuildEvent>REM cd "$(SolutionDir)"
+REM .nuget\nuget pack -Symbols  "$(ProjectPath)"</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
