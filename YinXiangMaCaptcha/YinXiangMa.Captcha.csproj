@@ -82,7 +82,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="lib\net451\YinXiangMa_lib.dll" />
+    <None Include="lib\net451\YinXiangMa_lib.dll" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
