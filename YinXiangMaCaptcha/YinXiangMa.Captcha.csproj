@@ -93,6 +93,9 @@
     <PostBuildEvent>cd "$(SolutionDir)"
 .nuget\nuget pack -Symbols  "$(ProjectPath)"</PostBuildEvent>
   </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>$(RootNamespace)</RootNamespace>
+  </PropertyGroup>
   <Import Project="..\packages\RazorGenerator.MsBuild.2.2.6\build\RazorGenerator.MsBuild.targets" Condition="Exists('..\packages\RazorGenerator.MsBuild.2.2.6\build\RazorGenerator.MsBuild.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
